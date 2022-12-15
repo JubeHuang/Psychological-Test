@@ -23,7 +23,9 @@ class AnswerController: UIViewController {
         }
         updateUI()
         // Do any additional setup after loading the view.
+        navigationItem.hidesBackButton = true
     }
+    
     
     func updateUI() {
         for i in 0...4 {

@@ -490,7 +490,11 @@
                         <color key="backgroundColor" red="0.98823529409999999" green="0.93725490199999995" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="ObR-vf-gDO">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="done" id="0pa-um-NX5"/>
+                        <barButtonItem key="rightBarButtonItem" title="完成" id="Le2-UY-UjH">
+                            <connections>
+                                <segue destination="yPT-bf-A1a" kind="unwind" unwindAction="unwindtoQuizStartWithSegue:" id="hBZ-1e-Peh"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outletCollection property="descriptionBgs" destination="uDF-Ah-81U" collectionClass="NSMutableArray" id="mRD-ls-sa1"/>
@@ -516,6 +520,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qgn-vX-kCz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="yPT-bf-A1a" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2461.5999999999999" y="2.9556650246305418"/>
         </scene>
